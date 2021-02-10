@@ -83,7 +83,7 @@ def bigram_frequency_tracker(list_tokens):
     return frequency
 
 
-data = web_scraper('https://en.wikipedia.org/wiki/Natural_language_processing')
+data = web_scraper('blank')  # replace blank with a URL 
 clean_corpus = document_cleaner(data)
 stop_word_list = stopwords.words('English')
 clean_corpus = stop_word_remover(clean_corpus, stop_word_list)
